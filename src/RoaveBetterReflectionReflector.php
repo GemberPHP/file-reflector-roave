@@ -7,6 +7,7 @@ namespace Gember\FileReflectorRoave;
 use Gember\EventSourcing\Util\File\Reflector\ReflectionFailedException;
 use Gember\EventSourcing\Util\File\Reflector\Reflector;
 use ReflectionClass;
+use Override;
 
 final readonly class RoaveBetterReflectionReflector implements Reflector
 {
@@ -14,6 +15,7 @@ final readonly class RoaveBetterReflectionReflector implements Reflector
         private RoaveBetterReflectionFactory $factory,
     ) {}
 
+    #[Override]
     public function reflectClassFromFile(string $file): ReflectionClass
     {
         $reflector = $this->factory->createRoaveReflectorForFile($file);
