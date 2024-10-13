@@ -1,6 +1,6 @@
 {
     "name": "gember/file-reflector-roave",
-    "description": "Gember File reflector (gember/event-sourcing) implementation based on roave/better-reflection",
+    "description": "Gember Event Sourcing File Reflector adapter based on roave/better-reflection",
     "license": "MIT",
     "type": "library",
     "keywords": [
